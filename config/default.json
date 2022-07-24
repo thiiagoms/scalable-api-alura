@@ -1,0 +1,11 @@
+{
+    "mysql": {
+        "databaseName": "petshop",
+        "databaseUser": "root",
+        "databasePass": "root",
+        "databaseHost": "127.0.0.1"
+    },
+    "api": {
+        "PORT": 8000
+    }
+}
