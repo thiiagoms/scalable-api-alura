@@ -32,6 +32,28 @@ class ProviderController {
       name: this.name,
       email: this.email,
       category: this.category,
+    });``
+  }
+
+  static async updateProvider(providerId, data) {
+    try {
+      console.log(data);
+      const provider = await this.findProvider(providerId);
+      
+      provider.name = data.name;
+
+      await provider.save();
+      return;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  static async deleteProvider(providerId) {
+    await Provider.destroy({
+      where: {
+        id: providerId,
+      },
     });
   }
 }
