@@ -29,9 +29,13 @@ providerRouter.put('/:id', async (request, response) => {
 });
 
 providerRouter.delete('/:id', async (request, response) => {
-  const providerId = request.params.id;
-  await ProviderController.deleteProvider(providerId);
-  response.status(204).send();
+  try {
+    const providerId = request.params.id;
+    await ProviderController.deleteProvider(providerId);
+    response.status(204).end();
+  } catch (error) {
+    response.status(500).send(JSON.stringify({ message: error }));
+  }
 });
 
 module.exports = providerRouter;
