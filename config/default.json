@@ -1,6 +1,6 @@
 {
     "mysql": {
-        "databaseName": "petshop",
+        "databaseName": "providers",
         "databaseUser": "root",
         "databasePass": "root",
         "databaseHost": "127.0.0.1"
