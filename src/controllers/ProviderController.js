@@ -1,7 +1,9 @@
-const Provider = require("../models/Provider");
+const Provider = require('../models/Provider');
 
 class ProviderController {
-  constructor({ name, email, cellphone, category }) {
+  constructor({
+    name, email, cellphone, category,
+  }) {
     this.id = 0;
     this.name = name;
     this.email = email;
@@ -21,7 +23,7 @@ class ProviderController {
     });
 
     if (!provider) {
-      throw new Error("Provider not found");
+      throw new Error('Provider not found');
     }
 
     return provider;
