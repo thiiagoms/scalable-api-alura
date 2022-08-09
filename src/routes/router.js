@@ -1,6 +1,6 @@
 const bodyParser = require('body-parser');
 const providerRouter = require('./provider.router');
-const helloRouter = require('./helo.router');
+const helloRouter = require('./hello.router');
 
 const router = (app) => {
   app.use(bodyParser.json());
