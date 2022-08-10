@@ -1,4 +1,22 @@
-# NodeJS API Alura
+<p align="center">
+  <a href="https://github.com/thiiagoms/alura-node">
+    <img src="assets/alura.png" alt="Logo" width="80" height="80">
+    <img src="assets/handshake.png" alt="Logo" width="70" height="70">
+    <img src="assets/node.png" alt="Logo" width="80" height="80">
+  </a>
+     <h3 align="center">API with Node and Alura! :hearts:</h3>
+</p>
+
+- [Dependencies](#Dependencies)
+- [Usage](#Usage)
+
+### Dependencies
+ - Git
+ - NodeJs LTS
+ - MySQL
+ - API Rest Client (Postman, Insomnia, etc)
+
+### Usage
 
 1 - Clone: 
 ```bash
